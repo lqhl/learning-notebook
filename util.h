@@ -6,18 +6,16 @@
 #pragma cling load("opencv_imgproc")
 #pragma cling load("opencv_calib3d")
 
-#include <iostream>
+#include <opencv2/opencv.hpp>
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 
-using namespace std;
-
-
+// ===== Start of im::show()
+// taken from https://github.com/jupyter-xeus/xeus-cling/issues/203
 #include "xtl/xbase64.hpp"
 #include "nlohmann/json.hpp"
 
-// taken from https://github.com/jupyter-xeus/xeus-cling/issues/203
 namespace im
 {
     struct matshow
@@ -41,3 +39,6 @@ namespace im
             return {};
     }
 }
+// ===== End of im::show()
+
+#include <iostream>
