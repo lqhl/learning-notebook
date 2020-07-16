@@ -1,5 +1,5 @@
-#pragma cling add_library_path("/Users/qliu/miniconda3/envs/a1/lib")
-#pragma cling add_include_path("/Users/qliu/miniconda3/envs/a1/include")
+#include "library_path.h"
+
 #pragma cling load("opencv_core")
 #pragma cling load("opencv_highgui")
 #pragma cling load("opencv_imgcodecs")
